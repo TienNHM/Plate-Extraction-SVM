@@ -1,10 +1,19 @@
-# MiAI_LP_Detection_SVM
-Use WPOD and SVM to detect license plate
+# Plate Extraction SVM
 
-Article link:  http://ainoodle.tech/2019/12/05/nhan-dien-bien-so-xe-chuong-5-nhan-dien-bien-so-xe-bang-wpod-va-svm/
+## Setup
 
-#MìAI <br>
-Fanpage: http://facebook.com/miaiblog<br>
-Group trao đổi, chia sẻ: https://www.facebook.com/groups/miaigroup<br>
-Website: http://miai.vn<br>
-Youtube: http://bit.ly/miaiyoutube<br>
+```
+pip install -r setup.txt
+```
+
+## Steps
+
+1. Chuẩn bị ảnh đặt vào thư mục [***test***](./test/)
+2. Giả lập server:
+```
+python server.py
+```
+3. Extract và xử lý biển số:
+```
+python read_plate.py
+```
